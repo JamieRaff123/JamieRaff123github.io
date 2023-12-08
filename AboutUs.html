@@ -1,0 +1,190 @@
+<DOCTYPE html>
+<html>
+<head>
+    <!-- Metas -->
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0" >
+	<meta name = "description" content = "The Hub BT80">
+	
+	<!-- Stylesheets-->
+	<link rel = "stylesheet" type ="text/css" href = "css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	
+	
+	<!-- Javascript code for mobile optimisation of the navigation bar-->
+	
+	<Script>
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+	</Script>
+	
+	<title> Compassionate Critters Animal Rescue - Jamie Rafferty </title>
+
+</head>	
+	
+<body>
+	<header>
+    <nav class="topnav" id="myTopnav">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="Index.html">
+                <img src="CCAR.png" alt="Your Logo">
+            </a>
+        </div>
+        <!-- Navigation links -->
+        <div class="nav-buttons">
+            <a href="Index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Upcomingevents.html" >Upcoming Events</a>
+            <a href="Adoption.html">Adoption</a>
+            <a href="Contactus.html">Contact Us</a>
+            <a href="Aboutus.html"class="active">About Us</a>
+            <!-- Add or modify navigation links as needed -->
+        </div>
+        <!-- Hamburger icon for mobile -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
+	
+	<div class = "aside-left">
+
+	</div>
+
+    <main align = "center">
+        <section class="about">
+            <h1>About Us </h1>
+            <p>Welcome to Compassionate Critters Animal Rescue!</p>
+            <p>We are a well-respected animal rescue charity with a strong commitment to animal welfare.</p>
+            <p>We rely on the generosity of donors, volunteers, and the support of the community to carry out our mission.</p>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to rescue and provide shelter, care, and love to animals in need.</p>
+            <p>We strive to create a community that values and respects the lives of all animals.</p>
+        </section>
+
+        <section class="team">
+            <h2>Our Team</h2>
+            <div class="team-members">
+                <!-- Profiles/bios of key team members -->
+                <div class="team-member">
+                   <h3>John Smith</h3>
+				   <img src="teammember1.png" alt="Team Member 1">
+                    <p>Founder & President</p>
+                </div>
+                <div class="team-member">
+                    <h3>Jane Doe</h3>
+					<img src="teammember2.png" alt="Team Member 2">                   
+                    <p>Head of Operations</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What People Say About Us</h2>
+            <div class="testimonial">
+                <p>"Compassionate Critters Animal Rescue has been a lifesaver for my pet. They truly care about animals!"</p>
+                <p>- Happy Pet Owner</p>
+            </div>
+            <!-- Add more testimonials if available -->
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or want to get involved, reach out to us!</p>
+			  <p> You can find our social media links below.</p>
+            <!-- Contact form or contact information -->
+        </section>
+    </main>
+
+	<aside-left>
+		
+	</aside-left>
+		
+	<aside-right>
+		
+	</aside-right>
+	
+	<footer>
+		    <div class="center-footer">
+			
+		<P> Find us on Social Media </P>
+        <a href="https://en-gb.facebook.com/" class="social-icon">
+            <img src="facebook.png" alt="Link to Facebook page">
+        </a>
+        <a href="https://www.instagram.com/?hl=en" class="social-icon">
+            <img src="instagram.png" alt="Link to Instagram page">
+        </a>
+        <a href="https://twitter.com/?lang=en" class="social-icon">
+            <img src="twitter.png" alt="Link to Twitter page">
+        </a>
+		
+		<div class = "copyright">
+
+			<p align = "center"> Copyright &copy; 2023-2024 Jamie Rafferty </p>
+
+		</div>
+		
+    </div>
+
+		
+		</div>
+	</footer>	
+	
+		<!-- Javascript code for mobile optimisation of the navigation bar -->
+	
+	<script>
+	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+// Set the date we're counting down to
+var countDownDate = new Date("june 13, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+	</script>
+	</body>
+	</html>

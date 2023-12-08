@@ -1,0 +1,498 @@
+/* General Styles */
+body {
+  max-width: 100%;
+  float: none;
+  margin: auto;
+  background-color: #D3D3D3;
+
+}
+
+header {
+  width: 100%;
+  display: inline-block;
+}
+
+p {
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  word-break: break-all;
+}
+
+/* Navigation Styles */
+.aside-left {
+  width: 20%;
+  float: left;
+  display: block;
+  min-height: 300px;
+  background-color: #D3D3D3;
+}
+
+.topnav {
+  background-color: #0F52BA;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+}
+
+.topnav .nav-buttons {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.topnav .nav-buttons a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 7px 11px; /* Adjust padding as needed */
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 3; /* Ensure proper line height */
+}
+
+.topnav .nav-buttons a:hover {
+  background-color: #7393B3;
+  color: black;
+}
+
+.topnav .nav-buttons a.active {
+  background-color: #0096FF;
+  color: white;
+}
+
+
+
+main {
+  width: 60%;
+  float: left;
+  display: block;
+  min-height: 300px;
+  background-color: #D3D3D3;
+}
+
+aside {
+  width: 20%;
+  float: left;
+  display: block;
+  min-height: 300px;
+  background-color: #D3D3D3;
+}
+
+footer {
+  width: 100%;
+  display: inline-block;
+  background-color: #0F52BA;
+}
+
+.center-footer {
+  text-align: center;
+  padding: 20px 0; /* Adjust as needed */
+  background-color:  #0F52BA;
+
+}
+
+
+.copyright {
+  width: 100%;
+  display: inline-block;
+  background-color: #FFFFFF;
+}
+
+
+
+/* Media queries for responsive design */
+@media screen and (max-width: 600px) {
+  /* Responsive layout changes */
+  .aside-left, .main, .aside, .left-footer, .center-footer, .right-footer {
+    width: 100%;
+  }
+
+  /* Additional specific styles for smaller screens */
+  .copyright {
+    width: 100%;
+    display: inline-block;
+    background-color: #F9F6EE;
+  }
+  
+
+}
+
+/* Styles for social media icons */
+.center-footer .social-icon {
+    display: inline-block;
+    margin: 0 10px; /* Adjust the spacing between icons */
+}
+
+.center-footer .social-icon img {
+    width: 40px; /* Adjust icon size */
+    height: 40px; /* Adjust icon size */
+}
+
+
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border-color: #EC5800;
+}
+
+tr {
+  background-color: #4F7942;
+}
+
+td, th {
+  padding-left: 8px; /* Corrected the missing colon */
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-color: #EC5800;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  align: center;
+}
+
+th {
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #0F52BA;
+  color: white;
+
+  border:;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #CF9FFF;
+}
+
+.container {
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 10%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+/* Slideshow styles */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+
+
+/* Featured Content Section Styles */
+.featured-content {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+.featured-item {
+    margin-bottom: 20px;
+}
+.featured-item img {
+    max-width: 50%;
+    height: 50%;
+}
+.featured-item p {
+    font-size: 0.9em;
+}
+
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #F9F9F9;
+    padding: 20px;
+}
+.testimonial {
+    margin-bottom: 15px;
+}
+.testimonial p {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Newsletter Signup Styles */
+.newsletter {
+    background-color: #EFEFEF;
+    padding: 20px;
+    text-align: center;
+}
+.newsletter input[type="email"],
+.newsletter input[type="submit"] {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.newsletter input[type="email"] {
+    width: calc(70% - 10px); /* Adjusted width to account for padding */
+}
+.newsletter input[type="submit"] {
+    width: calc(30% - 10px); /* Adjusted width to account for padding */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.newsletter input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for event listings */
+.event {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    padding: 15px;
+    text-align: center;
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.event h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.event p {
+    margin-bottom: 10px;
+}
+
+.event a {
+    display: inline-block;
+    background-color: #0F52BA;
+    color: #FFFFFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.event a:hover {
+    background-color: #7393B3;
+}
+
+/* Styles for the countdown */
+.countdown {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.countdown h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#demo {
+    font-size: 2em;
+    color: #7f39d3;
+    font-weight: bold;
+}
+
+
+
+/* New styles for added sections */
+.about,
+.mission,
+.team,
+.testimonials,
+.contact {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.about h1,
+.mission h2,
+.team h2,
+.testimonials h2,
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 15px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.listing {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animal {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+}
+
+.animal h2 {
+  margin-top: 0;
+}
+
+.animal img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Hide initially and display based on selected filter */
+.animal {
+  display: none;
+}
+
+.animal.all,
+.animal.dog {
+  display: block;
+}
+
+/* Define specific display rules for each animal type */
+.animal.cat {
+  display: none;
+}
+
+.animal.rabbit {
+  display: none;
+}
+
+/* Add this CSS to your existing stylesheet or create a new one */
+.adopt-button {
+  padding: 8px 16px;
+  background-color: ##0F52BA;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.adopt-button:hover {
+  background-color: #45a049;
+}
